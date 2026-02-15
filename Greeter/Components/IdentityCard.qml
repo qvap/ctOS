@@ -75,9 +75,9 @@ Item {
 
         Image {
             Layout.bottomMargin: 2  // optical compensation
+            Layout.fillWidth: true
             fillMode: Image.PreserveAspectFit
-            source: "../Resources/id-barcode.svg"
-            width: parent.width
+            source: "../Resources/id-barcode.svg"  
         }
     }
 
@@ -97,6 +97,8 @@ Item {
         }
 
         Image {
+            anchors.fill: parent
+            fillMode: Image.PreserveAspectFit
             source: "../Resources/user.svg"
             opacity: 0.9
         }
